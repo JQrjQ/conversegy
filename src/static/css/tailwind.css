@@ -4,17 +4,61 @@
 
 /*Your Custom CSS Goes here*/
 
-h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+/* Style the links inside the sidenav */
+
+* { border: 1px solid black; }
+
+
+
+
+#canvas1{
+  width: 100vw;
+  height: 100vh;
 }
 
-h3 {
-  @apply text-2xl font-bold mb-3;
+/*Typewriter */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
 }
 
-/* Syntax Highlighting*/
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #ff5438 50%, #300a44 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
 
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  @apply bg-gray-800;
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }

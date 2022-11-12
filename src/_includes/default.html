@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script defer src="https://analytics.conversegy.com/tracker.js" data-ackee-server="https://analytics.conversegy.com"
+    data-ackee-domain-id="4660a731-cf84-4970-8274-a9ed2a7e7506"></script>
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +13,24 @@
     {% if description %}
       <meta name="description" content="{{description}}"/>
     {% endif %}
+    <meta name="author" content="{{author}}">
+    <meta name="keywords" conntent="{{keywords}}">
+
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    {% if prism == true %}
-      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
-    {% endif %}
   </head>
-  <body>
-    {% include "./partials/navbar.html" %}
+    <body class="font-mono">
+    
+      
+        
+  {{ content | safe }}
 
-    {{ content | safe }}
+  {% include "./partials/footer.html" %}
 
-    {% include "./partials/footer.html" %}
 
-    <script src="/static/js/alpine.js"></script>
+  
+
+    <script src="/static/js/main.js"></script>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
