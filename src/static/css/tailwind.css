@@ -4,12 +4,8 @@
 
 /*Your Custom CSS Goes here*/
 
+
 /* Style the links inside the sidenav */
-
-
-
-
-
 
 #canvas1{
   width: 100vw;
@@ -17,9 +13,13 @@
 }
 
 /*Typewriter */
+
+/* Cursor */
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
 }
+
+/*End Typewrite*/
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
