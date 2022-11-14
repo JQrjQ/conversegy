@@ -20,18 +20,29 @@
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
   </head>
-    <body class="font-sans">
+    <body class="font-mono bg-blueish">
     
       
         
   {{ content | safe }}
 
-  {% include "./partials/footer.html" %}
+
 
 
   
+<div class="w-full md:w-2/3 mx-auto  text-white bg-blueish flex flex-col flex-grow justify-around">
+  <div class="flex flex-col justify-between  mx-auto bottom-0">
+    <div class="flex flex-row justify-around text-xs ">
+        <a class="block cursor-pointer  hover:text-white uppercase">Terms</a>
+        <a class="block cursor-pointer  hover:text-white uppercase">Contact</a>
+        <a class="block cursor-pointer  hover:text-white uppercase">Privacy</a>
+        <a class="block cursor-pointer  hover:text-white uppercase">Pricing</a>
 
-    
+    </div>
+    <p class="w-full text-center text-gray-600">Copyright © {{ helpers.currentYear() }}
+        {{settings.name}}</p>
+</div>
+</div>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
