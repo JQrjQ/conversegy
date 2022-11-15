@@ -7,15 +7,14 @@
 
 /* Style the links inside the sidenav */
 
-/*{
+*{
   border: 1px solid yellow;
-}*/
+}
 
 .context {
   width: 100%;
   position: absolute;
   top:50vh;
-  
 }
 
 .context h1{
@@ -23,7 +22,6 @@
   color: #fff;
   font-size: 50px;
 }
-
 
 .area{
   background: transparent;   
@@ -33,7 +31,6 @@
   z-index: -10;
  
 }
-
 .circles{
   position: absolute;
   top: 0;
