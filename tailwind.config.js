@@ -10,15 +10,27 @@ module.exports = {
       lg: '1024px',
       xl: '1200px',
     },
+   /* fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'display': ['Oswald'],
+      'body': ['"Open Sans"'],
+    },*/
+    
     colors: {
       'blackish': '#5F6366',
-      'blueish': '#4D6D9A',
-      'purpleish': '#86B3D1',
-      'light-blueish': '#99CED3',
+      'blueish': '#301008',
+      'purpleish': '#482673',
+      'light-blueish': '#4cbfa6',
       'silver': '#ecebff',
-      'bubble-gumish': '#EDB5BF',
+      'bubble-gumish': '#ed0b70',
       'bermuda': '#78dcca',
-      'white': '#fff'
+      'white': '#fff',
+      'softlilac': '#f6ebf4',
+      'black': '#000',
+      'yellow': '#FFFF00',
+      'transparent': 'transparent'
     },
     container: {
       center: true,
@@ -30,4 +42,4 @@ module.exports = {
   variants: {},
   plugins: [require("@tailwindcss/typography")],
 };
-
+  
