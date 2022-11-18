@@ -14,6 +14,16 @@ module.exports = {
       'lato': ['Lato'],
       'mono': ['Roboto Mono', 'monospace'],
     },
+    backgroundImage: {
+      'hero-home': "url('/static/img/conversegy_homepage_hero_sheep.webp')",
+      'footer-texture': "url('/img/footer-texture.png')"
+    },
+    backgroundSize: ({ theme }) => ({
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      ...theme('spacing')
+    }),
   
     colors: {
       'blackish': '#5F6366',
