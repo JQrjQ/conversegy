@@ -16,7 +16,8 @@ module.exports = {
     },
     backgroundImage: {
       'hero-home': "url('/static/img/conversegy_homepage_hero_sheep.webp')",
-      'footer-texture': "url('/img/footer-texture.png')"
+      'footer-texture': "url('/img/footer-texture.png')",
+      'work': 'linear-gradient(to bottom left, var(--tw-gradient-stops))',
     },
     backgroundSize: ({ theme }) => ({
       auto: 'auto',
@@ -37,7 +38,17 @@ module.exports = {
       'softlilac': '#f6ebf4',
       'black': '#000',
       'yellow': '#FFFF00',
-      'transparent': 'transparent'
+      'transparent': 'transparent',
+      'light-grayish': '#e5e7eb',
+      'grayish': '#d1d5db',
+      'dark-grayish': '#1e293b',
+      'blue-400': '#60a5fa',
+      'blue-500': '#3b82f6',
+      'blue-700': '#1d4ed8',
+      'gray-50': '#f9fafb',
+      'gray-700': '#374151',
+      'gray-100': '#f3f4f6',
+      'gray-400': '#9ca3af',
     },
     container: {
       center: true,
@@ -48,5 +59,6 @@ module.exports = {
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],
+  
 };
   

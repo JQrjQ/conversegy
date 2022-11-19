@@ -27,6 +27,8 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
+    
+
   });
 
   // Copy Image Folder to /_site
@@ -42,17 +44,19 @@ module.exports = function (eleventyConfig) {
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-    if (outputPath.endsWith(".html")) {
+    if (outputPath.endsWith(".html",".css")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
+        minifyCSS: true,  
       });
       return minified;
     }
 
     return content;
   });
+  
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
