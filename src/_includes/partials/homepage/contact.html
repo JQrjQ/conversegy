@@ -6,7 +6,7 @@
             <p class="md:text-3xl text-xl font-extrabold leading-7 text-center uppercase  py-5 ">Fill in the form & we'll get back to you
                 shortly!</p>
             <!--Form Itself-->
-            <form name="contact-homepage" method="POST" data-netlify="true" action="/thanks" >
+            <form name="contact-homepage" method="POST" data-netlify="true" data-netlify-recaptcha="true"  action="/thanks" >
                 <div class="sm:w-3/5 md:w-1/2 flex flex-col flex-grow justify-evenly mx-auto">
                     <!--name-->
                     <div class="flex flex-col">
@@ -20,7 +20,7 @@
                     <!--Email-->
                     <div class="flex flex-col">
                         <label class="text-base font-semibold leading-none text-gray-800 mt-4  ">Email Address</label>
-                        <input tabindex="0" placeholder="Your email address" type="name" name="email" required
+                        <input tabindex="0" placeholder="Your email address" type="email" name="email" required
                             class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-1 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
                             placeholder="Please input email address" />
                     </div>
@@ -39,6 +39,7 @@
                     </div>
                     <p class="text-xs leading-3 text-gray-600 dark:text-gray-200 mt-2">By clicking submit you agree to our
                         terms of service & privacy policy</p>
+                    <div data-netlify-recaptcha="true"></div>
                     <!--Button-->
                     <div class="flex items-center justify-center w-full py-5">
                         <button
